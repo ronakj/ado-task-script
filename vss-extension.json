@@ -3,7 +3,7 @@
     "id": "ADOTaskScript",
     "name": "ADO Task Script",
     "version": "1.0.0",
-    "publisher": "ronakj",
+    "publisher": "RJEx",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
@@ -14,7 +14,7 @@
         "Azure Pipelines"
     ],
     "icons": {
-        "default": "images/extension-icon.png"        
+        "default": "images/script.png"        
     },
     "files": [
         {

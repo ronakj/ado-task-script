@@ -11,7 +11,7 @@ async function run() {
 
   const maxRetries = isNaN(Number(maxRetriesInput)) ? 5 : Number(maxRetriesInput);
   const webApi = getWebApiWithProxy({ allowRetries: maxRetries > 0, maxRetries });
-  
+
   if (!script) {
     throw new Error('Script input is required');
   }
