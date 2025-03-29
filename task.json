@@ -1,0 +1,39 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "8c48d0aa-9bc4-4fc6-9f46-f3f7ffe13e5a",
+    "name": "ADOTaskScript",
+    "friendlyName": "ADO Task Script",
+    "description": "Execute javascript script in ADO pipeline context",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Ronak Jain",
+    "version": {
+        "Major": 0,
+        "Minor": 1,
+        "Patch": 0
+    },
+    "instanceNameFormat": "ADOTaskScript",
+    "inputs": [
+        {
+            "name": "script",
+            "type": "string",
+            "label": "JS Script",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Write a JS script to be executed in ADO pipeline context. You can use `require` to import modules. The script will be executed in the context of the ADO pipeline agent."
+        },
+        {
+            "name": "maxRetries",
+            "type": "int",
+            "defaultValue": "3",
+            "label": "API Retries",
+            "required": false,
+            "helpMarkDown": "Number of times to retry the API call in case of failure. Default is 3."
+        }
+    ],
+    "execution": {
+        "Node20_1": {
+            "target": "index.js"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "ADOTaskScript",
+    "name": "ADO Task Script",
+    "version": "1.0.0",
+    "publisher": "ronakj",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Execute javascript script in ADO pipeline context",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "files": [
+        {
+            "path": "./index.js"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "ado-task-script",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "ADO Task Script"
+            }
+        }
+    ]
+}
