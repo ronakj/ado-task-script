@@ -4,8 +4,8 @@
   "description": "An ADO pipeline task similar to @github/actions-script",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && esbuild src/index.ts --bundle --platform=node --target=node20 --outfile=index.js",
-    "package": "tfx extension create --manifest-globs vss-extension.json --output-path dist"
+    "build": "tsc && esbuild ADOScriptTask/src/index.ts --bundle --platform=node --target=node20 --outfile=ADOScriptTask/dist/index.js",
+    "package": "tfx extension create --manifest-globs vss-extension.json --output-path dist/"
   },
   "author": "",
   "license": "ISC",
